@@ -30,3 +30,4 @@ router.get("/", auth, authController.getUser);
 
 module.exports = router;
 
+
