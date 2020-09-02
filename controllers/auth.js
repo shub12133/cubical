@@ -3,7 +3,7 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcryptjs");
-const {sendWelcomeEmail} = require("../emails/account");x
+const {sendWelcomeEmail} = require("../emails/account");
 
 // @route    POST /auth/signup
 // @desc     Register User
