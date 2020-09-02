@@ -3,14 +3,14 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcryptjs");
-const {sendWelcomeEmail} = require("../emails/account");
+const {sendWelcomeEmail} = require("../emails/account");x
 
 // @route    POST /auth/signup
 // @desc     Register User
 // @access   Public
 exports.signup = async (req, res, next) => {
     const errors = validationResult(req);
-    if (!errors.isEmpty()) {
+    if (!errors.isEmpty()) {x
       return res.status(400).json({ errors: errors.array() });
     }
 
@@ -129,4 +129,3 @@ exports.getUser = async (req, res, next) => {
         next(err);
     }
 }
-
