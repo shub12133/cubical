@@ -50,7 +50,7 @@ const Navbar = ({auth: {isAuthenticated, loading}, cart: {totalQuantity, cartIte
     );
 
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-dark mb-3">
+        <nav className="navbar navbar-expand-md navbar-white bg-dark mb-3">
         <div className="container">
             <Link className="navbar-brand text-primary text-monospace font-italic" to={isAuthenticated ? "/dashboard" : "/"}> <i className="fas fa-business-time" /> {" "} Cubical</Link>
             <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
