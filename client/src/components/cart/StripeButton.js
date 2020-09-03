@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 const StripeButton = ({ price, postCartPayment }) => {
   const priceForStripe = price * 100;
-  const publishableKey = 'pk_test_VDVUHRqmElyMUwYUqFclQheZ';
+  const publishableKey = 'pk_test_51HNC0SELVTj2iAI1Xk6qyYhRrF7ps0uIB19imTZvmg7f9w1p2XDOs3zz87DdHhQ7HB4zV59MiV6Rkh9y0B4oFAKC00OMy3zaXN';
 
   const onToken = token => {
     postCartPayment(priceForStripe, token);
